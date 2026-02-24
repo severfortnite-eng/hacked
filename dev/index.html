@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>My Mobile Map App</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="./src/app.js" defer></script>
+</head>
+<body>
+
+    <div id="map-page" class="app-page active-page">
+        <button id="toggle-view-btn" class="toggle-view-btn" onclick="toggleView()">📋</button>
+        <div id="map"></div>
+        
+<div id="info-panel" style="display: none;">
+    <button id="close-panel-btn" onclick="closeInfoPanel()">X</button>
+    <img id="panel-image" src="" alt="Location Photo">
+    <h3 id="panel-title">Title Goes Here</h3>
+    
+    <p id="panel-address" style="font-weight: bold; font-size: 12px; color: #555; margin-bottom: 5px;"></p>
+    <p id="panel-hours" style="font-size: 12px; color: #777; margin-bottom: 10px;"></p>
+    
+    <p id="panel-description">Description goes here.</p>
+</div>
+</div>
+        <div id="box-view" class="box-view hidden">
+            <div class="box-view-header">
+                <button onclick="toggleView()" class="close-box-view">← Back to Map</button>
+                <h2 id="box-view-title">Locations</h2>
+                <div class="box-view-controls">
+                    <label for="order-select" class="visually-hidden">Order</label>
+                    <select id="order-select" aria-label="Order locations">
+                        <option value="asc">A → Z</option>
+                        <option value="desc">Z → A</option>
+                    </select>
+                </div>
+            </div>
+            <div id="box-container" class="box-container"></div>
+        </div>
+</div>
+    <div id="profile-page" class="app-page">
+        <div class="profile-content">
+            
+            <div id="login-section">
+                <h2>Welcome Back</h2>
+                <br>
+                <label>Email:</label><br>
+                <input type="email" id="email-input" placeholder="name@example.com" class="form-input">
+                <br><br>
+                <label>Password:</label><br>
+                <input type="password" id="password-input" placeholder="Enter password" class="form-input">
+                <br><br>
+                <button class="primary-btn" onclick="loginUser()">Log In</button>
+                <br><br>
+                <p>Don't have an account? <a href="#" onclick="alert('Signup coming next!')">Sign Up here</a></p>
+            </div>
+
+            <div id="user-dashboard" style="display: none;">
+                <h2>My Profile</h2>
+                <br>
+                <p>Welcome! You are securely logged in.</p>
+                <br>
+                <button class="primary-btn" onclick="logoutUser()">Log Out</button>
+            </div>
+
+        </div>
+    </div>
+
+<div id="bottom-nav">
+        <button class="nav-btn" onclick="switchTab('landmarks')">📜️</button>
+        <button class="nav-btn" onclick="switchTab('businesses')">🛍️    </button>
+        <button class="nav-btn" onclick="switchTab('profile')">👤</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>        <button id="toggle-view-btn" class="toggle-view-btn" onclick="toggleView()">📋</button>
+        <div id="map"></div>
+        
+<div id="info-panel" style="display: none;">
+    <button id="close-panel-btn" onclick="closeInfoPanel()">X</button>
+    <img id="panel-image" src="" alt="Location Photo">
+    <h3 id="panel-title">Title Goes Here</h3>
+    
+    <p id="panel-address" style="font-weight: bold; font-size: 12px; color: #555; margin-bottom: 5px;"></p>
+    <p id="panel-hours" style="font-size: 12px; color: #777; margin-bottom: 10px;"></p>
+    
+    <p id="panel-description">Description goes here.</p>
+</div>
+
+        <div id="box-view" class="box-view hidden">
+            <div class="box-view-header">
+                <button onclick="toggleView()" class="close-box-view">← Back to Map</button>
+                <h2 id="box-view-title">Locations</h2>
+                <div class="box-view-controls">
+                    <label for="order-select" class="visually-hidden">Order</label>
+                    <select id="order-select" aria-label="Order locations">
+                        <option value="asc">A → Z</option>
+                        <option value="desc">Z → A</option>
+                    </select>
+                </div>
+            </div>
+            <div id="box-container" class="box-container"></div>
+        </div>
+</div>
+    <div id="profile-page" class="app-page">
+        <div class="profile-content">
+            
+            <div id="login-section">
+                <h2>Welcome Back</h2>
+                <br>
+                <label>Email:</label><br>
+                <input type="email" id="email-input" placeholder="name@example.com" class="form-input">
+                <br><br>
+                <label>Password:</label><br>
+                <input type="password" id="password-input" placeholder="Enter password" class="form-input">
+                <br><br>
+                <button class="primary-btn" onclick="loginUser()">Log In</button>
+                <br><br>
+                <p>Don't have an account? <a href="#" onclick="alert('Signup coming next!')">Sign Up here</a></p>
+            </div>
+
+            <div id="user-dashboard" style="display: none;">
+                <h2>My Profile</h2>
+                <br>
+                <p>Welcome! You are securely logged in.</p>
+                <br>
+                <button class="primary-btn" onclick="logoutUser()">Log Out</button>
+            </div>
+
+        </div>
+    </div>
+
+<div id="bottom-nav">
+        <button class="nav-btn" onclick="switchTab('landmarks')">📜️</button>
+        <button class="nav-btn" onclick="switchTab('businesses')">🛍️    </button>
+        <button class="nav-btn" onclick="switchTab('profile')">👤</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="src/app.js"></script>
+
+</body>
+</html>

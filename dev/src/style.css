@@ -1,0 +1,143 @@
+/* Reset and Mobile Screen Lock */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+    height: 100%; width: 100%; overflow: hidden;
+    user-select: none; -webkit-user-select: none;
+    background-color: #f4f4f4; font-family: Arial, sans-serif;
+}
+
+/* Page Navigation Logic */
+.app-page {
+    display: none; 
+    height: 100%; /* Changed to 100% so the map fills the whole screen */
+    width: 100%;
+    position: relative; 
+    overflow-y: auto; 
+}
+.active-page { display: block; }
+
+/* Map Area */
+#map { height: 100%; width: 100%; }
+
+/* === LEFT-SIDE INFO PANEL STYLES === */
+#info-panel {
+    position: absolute;
+    top: calc(20px + env(safe-area-inset-top));
+    left: 20px;
+    width: 250px;
+    max-width: 80%; /* Prevents breaking on very small screens */
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+/* === NEW IMAGE STYLES FOR FIXED SIZE === */
+#panel-image {
+    width: 100%;        /* Fill the width of the panel */
+    height: 150px;      /* FIXED HEIGHT */
+    object-fit: cover;  /* This crops the image so it doesn't stretch */
+    border-radius: 8px; /* Rounds the corners nicely */
+    margin-bottom: 15px; /* Adds space between image and title */
+    background-color: #eee; /* A placeholder color while loading */
+}
+
+#panel-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+#panel-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+#close-panel-btn {
+    float: right;
+    background: none; border: none; font-size: 16px;
+    font-weight: bold; color: #999; margin-bottom: 10px;
+}
+
+/* Profile & Form Styling */
+.profile-content {
+    padding: 20px;
+    padding-top: calc(20px + env(safe-area-inset-top));
+}
+.form-input {
+    width: 100%; padding: 12px; border: 1px solid #ccc;
+    border-radius: 5px; font-size: 16px;
+}
+.primary-btn {
+    width: 100%; padding: 15px; background-color: #007bff;
+    color: white; border: none; border-radius: 5px;
+    font-size: 16px; font-weight: bold;
+}
+
+/* === FLOATING BOTTOM NAVIGATION === */
+#bottom-nav {
+    width: 100%;
+    background: transparent; /* Removed the solid white background */
+    border: none; /* Removed the top line */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    position: absolute; 
+    bottom: 30px; /* Lifts the buttons up from the very bottom edge */
+    padding-bottom: env(safe-area-inset-bottom);
+    z-index: 9999; /* Keeps buttons above the map */
+    
+    /* This lets the user click the map through the invisible container spaces */
+    pointer-events: none; 
+}
+
+.nav-btn {
+    background-color: #ffffff; /* The solid white circle */
+    border: none;
+    font-size: 24px; /* Emoji size */
+    color: #333;
+    
+    /* Fixed width and height to create a perfect circle */
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; /* Rounds the edges into a circle */
+    
+    /* Centers the emoji perfectly inside the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Adds a drop shadow so the white circle pops against the map */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    
+    /* Makes the actual buttons clickable again */
+    pointer-events: auto; 
+}
+
+/* Optional: Adds a slight effect when the user taps the button */
+.nav-btn:active {
+    background-color: #e0e0e0;
+    transform: scale(0.95);
+}
+/* === CUSTOM MAP PINS === */
+.custom-pin {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Emoji size inside the pin */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+/* Blue border for Landmarks */
+.landmark-pin {
+    border: 2px solid #007bff; 
+}
+
+/* Orange border for Businesses */
+.business-pin {
+    border: 2px solid #ff9800; 
+}
