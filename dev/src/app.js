@@ -86,7 +86,7 @@ const businessIcon = L.divIcon({
 
 // 5. Load Landmarks from JSON
 function loadLandmarks() {
-    fetch('landmarks.json')
+    fetch('src/landmarks.json')
         .then(response => response.json())
         .then(data => {
             landmarksData = data;
@@ -107,7 +107,7 @@ loadLandmarks();
 
 // 6. Load Businesses from JSON
 function loadBusinesses() {
-    fetch('businesses.json')
+    fetch('src/businesses.json')
         .then(response => response.json())
         .then(data => {
             businessesData = data;
