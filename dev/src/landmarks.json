@@ -4,7 +4,7 @@
     "lng": 1.2960,
     "title": "Norwich Castle",
     "description": "Built by the Normans. It now serves as a museum and art gallery.",
-    "image": "castle.jpg",
+    "image": "images/norwichcastle.jpg",
     "address": "Castle Hill, Norwich NR1 3JU",
     "hours": "Mon-Sat: 10:00 AM - 4:30 PM"
   },
@@ -22,16 +22,16 @@
     "lng": 1.2932,
     "title": "Norwich Market",
     "description": "One of the oldest and largest outdoor markets in the country, featuring colorful roofs.",
-    "image": "market.jpg",
+    "image": "images/norwichmarket.png",
     "address": "Gentleman's Walk, Norwich NR2 1ND",
     "hours": "Mon-Sat: 8:30 AM - 5:30 PM"
   },
   {
     "lat": 52.6302,
     "lng": 1.3060,
-    "title": "Pull's Ferry",
+    "title": "River Wensum",
     "description": "A picturesque 15th-century watergate located on the River Wensum.",
-    "image": "ferry.jpg",
+    "image": "images/watergate.png",
     "address": "Ferry Ln, Norwich NR1 4DZ",
     "hours": "24/7 (Exterior Viewing)"
   },
@@ -40,7 +40,7 @@
     "lng": 1.2921,
     "title": "The Forum",
     "description": "A stunning modern glass building housing the library and community events.",
-    "image": "forum.jpg",
+    "image": "images/forum.png",
     "address": "Millennium Plain, Norwich NR2 1TF",
     "hours": "Daily: 7:00 AM - Midnight"
   },
@@ -49,7 +49,7 @@
     "lng": 1.2926,
     "title": "Strangers' Hall",
     "description": "A fascinating museum of domestic history housed in a beautiful Tudor building.",
-    "image": "strangers.jpg",
+    "image": "images/strangershall.png",
     "address": "Charing Cross, Norwich NR2 4AL",
     "hours": "Wed, Fri, Sun: 1:00 PM - 4:30 PM"
   },
@@ -58,7 +58,7 @@
     "lng": 1.2862,
     "title": "Plantation Garden",
     "description": "A secret, restored Victorian town garden that acts as a peaceful oasis in the city.",
-    "image": "garden.jpg",
+    "image": "images/plantationgarden.png",
     "address": "4 Earlham Rd, Norwich NR2 3DB",
     "hours": "Daily: 9:00 AM - 6:00 PM"
   }
