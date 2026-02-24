@@ -1,5 +1,8 @@
 /* Reset and Mobile Screen Lock */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; 
+    button:hover { cursor: pointer; }
+}
+
 html, body {
     height: 100%; width: 100%; overflow: hidden;
     user-select: none; -webkit-user-select: none;
@@ -16,8 +19,36 @@ html, body {
 }
 .active-page { display: block; }
 
+#toggle-view-btn {
+    position: absolute;
+    background-color: #ffffff; /* The solid white circle */
+    border: none;
+    font-size: 24px; /* Emoji size */
+    color: #333;
+    
+    /* Fixed width and height to create a perfect circle */
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; /* Rounds the edges into a circle */
+    
+    /* Centers the emoji perfectly inside the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Keeps the button above the map */
+    
+    /* Adds a drop shadow so the white circle pops against the map */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    
+    /* Makes the actual buttons clickable again */
+    pointer-events: auto;
+
+    top: 20px;
+    right: 20px;
+}
+
 /* Map Area */
-#map { height: 100%; width: 100%; }
+#map { height: 100vh; width: 100vw; }
 
 /* === LEFT-SIDE INFO PANEL STYLES === */
 #info-panel {

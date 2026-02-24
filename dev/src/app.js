@@ -155,6 +155,15 @@ function switchTab(tabName) {
     }
 }
 
+document.getElementById('toggle-view-btn').addEventListener('click', toggleView);
+document.getElementById('landmarksButton').addEventListener('click', () => switchTab('landmarks'));
+document.getElementById('businessesButton').addEventListener('click', () => switchTab('businesses'));
+document.getElementById('profileButton').addEventListener('click', () => switchTab('profile'));
+document.getElementById('login-btn').addEventListener('click', loginUser);
+document.getElementById('close-panel-btn').addEventListener('click', closeInfoPanel);
+document.getElementById('logout-btn').addEventListener('click', logoutUser);
+document.getElementById('close-box-view').addEventListener('click', toggleView);
+
 // 8. Mock Login Logic
 function loginUser() {
     document.getElementById('login-section').style.display = 'none';
