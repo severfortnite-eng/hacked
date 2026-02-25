@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>My Mobile Map App</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="./src/app.js" defer></script>
+</head>
+<body>
+
+    <div id="map-page" class="app-page active-page">
+        <button id="toggle-view-btn" class="toggle-view-btn">📋</button>
+        <div id="map"></div>
+        
+<div id="info-panel" style="display: none;">
+    <button id="close-panel-btn">X</button>
+    <img id="panel-image" src="" alt="Location Photo">
+    <h3 id="panel-title">Title Goes Here</h3>
+    
+    <p id="panel-address" style="font-weight: bold; font-size: 12px; color: #555; margin-bottom: 5px;"></p>
+    <p id="panel-hours" style="font-size: 12px; color: #777; margin-bottom: 10px;"></p>
+    
+    <p id="panel-description">Description goes here.</p>
+
+    <div id="panel-history" style="display:none;"></div>
+
+    <div id="panel-spend" style="display:none;">
+        <div class="spend-row">
+            <span class="spend-currency">£</span>
+            <input type="number" id="spend-input" placeholder="0.00" min="0" step="0.01" class="spend-input">
+            <button id="spend-btn" class="spend-btn">Log Spend</button>
+        </div>
+        <p id="spend-confirm" class="spend-confirm"></p>
+    </div>
+</div>
+
+        <div id="box-view" class="box-view hidden">
+            <div class="box-view-header">
+                <button id="close-box-view" class="close-box-view">← Back to Map</button>
+                <h2 id="box-view-title">Locations</h2>
+                <div class="box-view-controls">
+                    <label for="order-select" class="visually-hidden">Order</label>
+                    <select id="order-select" aria-label="Order locations">
+                        <option value="asc">A → Z</option>
+                        <option value="desc">Z → A</option>
+                    </select>
+                </div>
+            </div>
+            <div id="box-container" class="box-container"></div>
+        </div>
+</div>
+</div>
+    <div id="profile-page" class="app-page">
+        <div class="profile-content">
+            
+            <div id="login-section">
+                <h2>Welcome Back</h2>
+                <br>
+                <label>Email:</label><br>
+                <input type="email" id="email-input" placeholder="name@example.com" class="form-input">
+                <br><br>
+                <label>Password:</label><br>
+                <input type="password" id="password-input" placeholder="Enter password" class="form-input">
+                <br><br>
+                <button class="primary-btn" id="login-btn">Log In</button>
+                <br><br>
+                <p>Don't have an account? <a href="#" id="signup-link">Sign Up here</a></p>
+                <div id="signup-notice" style="display:none; margin-top:12px; padding:12px 16px; background:#e8f4fd; border-left:3px solid #2196F3; border-radius:6px; color:#1565C0; font-size:13px;">
+                    Sign-up is coming soon! For now, tap <strong>Log In</strong> to explore the app.
+                </div>
+            </div>
+
+            <div id="user-dashboard" style="display: none;">
+                <h2>My Profile</h2>
+                <br>
+                <p>Welcome! You are securely logged in.</p>
+                <br>
+
+                <div id="spending-summary" style="margin:16px 0; padding:16px; background:#f8f9fa; border-radius:10px;">
+                    <h3 style="margin-bottom:12px; font-size:15px; color:#555;">Your Spending</h3>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+                        <span style="font-size:14px; color:#333;">Total:</span>
+                        <span id="total-spent" style="font-size:18px; font-weight:bold; color:#333;">£0.00</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:14px; color:#333;">Into the local economy:</span>
+                        <span id="local-economy" style="font-size:18px; font-weight:bold; color:#28a745;">£0.00</span>
+                    </div>
+                    <div id="purchase-list" style="margin-top:14px; border-top:1px solid #e0e0e0; padding-top:10px;"></div>
+                </div>
+
+                <button class="primary-btn" id="logout-btn">Log Out</button>
+            </div>
+
+        </div>
+    </div>
+
+<div id="bottom-nav">
+        <button class="nav-btn" id="landmarksButton">📜️</button>
+        <button class="nav-btn" id="businessesButton">🛍️    </button>
+        <button class="nav-btn" id="profileButton">👤</button>
+    </div>
+
+</body>

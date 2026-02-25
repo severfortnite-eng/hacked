@@ -1,0 +1,65 @@
+[
+  {
+    "lat": 52.6280,
+    "lng": 1.2930,
+    "title": "Local Cafe",
+    "description": "Great coffee and fresh daily pastries baked on site.",
+    "image": "cafe.jpg",
+    "address": "15 St Giles St, Norwich",
+    "hours": "Mon-Fri: 8:00 AM - 5:00 PM"
+  },
+  {
+    "lat": 52.6300,
+    "lng": 1.2950,
+    "title": "The Bookshop",
+    "description": "Independent book retailer with a great local history section.",
+    "image": "images/bookshop.jpg",
+    "address": "42 London St, Norwich",
+    "hours": "Mon-Sat: 9:00 AM - 6:00 PM"
+  },
+  {
+    "lat": 52.6286,
+    "lng": 1.2938,
+    "title": "Grosvenor Fish Bar",
+    "description": "Award-winning traditional fish and chips served in an underground bunker.",
+    "image": "images/grosvenor.jpg",
+    "address": "28 Lower Goat Ln, Norwich NR2 1EL",
+    "hours": "Mon-Sat: 11:00 AM - 7:30 PM"
+  },
+  {
+    "lat": 52.6289,
+    "lng": 1.2947,
+    "title": "Jarrolds",
+    "description": "Norwich's flagship independent department store, established in 1823.",
+    "image": "images/jarrolds.jpg",
+    "address": "1-11 London St, Norwich NR2 1JF",
+    "hours": "Mon-Sat: 9:30 AM - 5:00 PM"
+  },
+  {
+    "lat": 52.6305,
+    "lng": 1.2944,
+    "title": "Cinema City",
+    "description": "An independent cinema housed in beautifully restored medieval buildings.",
+    "image": "images/cinema.jpg",
+    "address": "St Andrews St, Norwich NR2 4AD",
+    "hours": "Daily: 10:00 AM - 11:00 PM"
+  },
+  {
+    "lat": 52.6366,
+    "lng": 1.2858,
+    "title": "Fat Cat Brewery Tap",
+    "description": "A highly acclaimed real ale pub with a vibrant atmosphere and great music.",
+    "image": "images/fatcat.jpg",
+    "address": "98-100 Lawson Rd, Norwich NR3 4LF",
+    "hours": "Daily: 12:00 PM - 11:00 PM"
+  },
+  {
+    "lat": 52.6322,
+    "lng": 1.2952,
+    "title": "Norwich Playhouse",
+    "description": "A friendly, relaxed theatre and bar located right by the river.",
+    "image": "images/playhouse.jpg",
+    "address": "42-58 St Georges St, Norwich NR3 1AB",
+    "hours": "Daily: 10:00 AM - Midnight"
+  }
+]
