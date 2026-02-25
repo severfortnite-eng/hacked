@@ -2,9 +2,9 @@
   {
     "lat": 52.6277,
     "lng": 1.2921,
-    "title": "Local Cafe",
+    "title": "Marzarno",
     "description": "Great coffee and fresh daily pastries baked on site.",
-    "image": "/images/business/cafe.jpg",
+    "image": "/images/business/marzarnocafe.jpg",
     "address": "15 St Giles St, Norwich",
     "hours": "Mon-Fri: 8:00 AM - 5:00 PM"
   },
@@ -13,7 +13,7 @@
     "lng": 1.295,
     "title": "The Bookshop",
     "description": "Independent book retailer with a great local history section.",
-    "image": "/images/business/bookshop.jpg",
+    "image": "/images/business/citybookshop.jpg",
     "address": "42 London St, Norwich",
     "hours": "Mon-Sat: 9:00 AM - 6:00 PM"
   },
@@ -22,7 +22,7 @@
     "lng": 1.2938,
     "title": "Grosvenor Fish Bar",
     "description": "Award-winning traditional fish and chips served in an underground bunker.",
-    "image": "/images/business/grosvenor.jpg",
+    "image": "/images/business/fishbar.jpg",
     "address": "28 Lower Goat Ln, Norwich NR2 1EL",
     "hours": "Mon-Sat: 11:00 AM - 7:30 PM"
   },
@@ -31,7 +31,7 @@
     "lng": 1.2947,
     "title": "Jarrolds",
     "description": "Norwich's flagship independent department store, established in 1823.",
-    "image": "/images/business/jarrolds.jpg",
+    "image": "/images/business/jarolds.jpg",
     "address": "1-11 London St, Norwich NR2 1JF",
     "hours": "Mon-Sat: 9:30 AM - 5:00 PM"
   },
@@ -49,7 +49,7 @@
     "lng": 1.2858,
     "title": "Fat Cat Brewery Tap",
     "description": "A highly acclaimed real ale pub with a vibrant atmosphere and great music.",
-    "image": "/images/business/fatcat.jpg",
+    "image": "/images/business/fatcatbrewery.jpg",
     "address": "98-100 Lawson Rd, Norwich NR3 4LF",
     "hours": "Daily: 12:00 PM - 11:00 PM"
   },
